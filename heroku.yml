@@ -6,7 +6,7 @@ setup:
     S3_BUCKET: my-example-bucket
 build:
   docker:
-    web: Dockerfile
+    web: minionsapp/Dockerfile
 run:
   web: bundle exec puma -C config/puma.rb
 
